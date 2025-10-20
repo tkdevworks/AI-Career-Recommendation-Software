@@ -1,0 +1,172 @@
+components:
+- components:
+  - layout_properties: {grid_position: 'WXFBSA,PKPJWB'}
+    name: spacer_3
+    properties: {height: 15.46826171875}
+    type: Spacer
+  - data_bindings: []
+    layout_properties: {grid_position: 'SWFYQD,RDCFMB'}
+    name: image_1
+    properties: {height: 169.68695068359375, source: _/theme/futureready-high-resolution-logo-transparent (1) (2).png}
+    type: Image
+  - data_bindings: []
+    layout_properties: {grid_position: 'BUTAQS,EEJAXG'}
+    name: label_2
+    properties:
+      align: center
+      font: ''
+      font_size: 26
+      spacing:
+        padding: [null, null, null, '0']
+      text: Find Your Path. Fuel Your Potential.
+    type: Label
+  - layout_properties: {grid_position: 'OSGMIO,WOZXHA'}
+    name: spacer_2
+    properties: {height: 2.788665771484375}
+    type: Spacer
+  - layout_properties: {grid_position: 'JPWPQN,RRUGNU'}
+    name: label_1_copy_copy
+    properties: {align: center, bold: true, font_size: 16, text: 'Future and Career Guidance for VCE Students, Powered by AI'}
+    type: Label
+  - layout_properties: {grid_position: 'UQEJMU,WWPNSC'}
+    name: spacer_4
+    properties: {height: 1.633270263671875}
+    type: Spacer
+  - event_bindings: {click: button_1_click}
+    layout_properties: {grid_position: 'XJLISC,DQDVQT'}
+    name: button_1
+    properties: {font_size: 16, role: filled-button, text: Begin Your Journey ➜}
+    type: Button
+  - layout_properties: {grid_position: 'VOOWJK,SRYFQA'}
+    name: spacer_5
+    properties: {height: 3.360595703125}
+    type: Spacer
+  - layout_properties: {grid_position: 'CUGRMJ,NVYKBF'}
+    name: spacer_1
+    properties: {height: -7.6256103515625}
+    type: Spacer
+  - layout_properties: {grid_position: 'QMBJQO,CJUDSR'}
+    name: label_1
+    properties: {align: center, font_size: 16, text: Learn more about us below}
+    type: Label
+  - layout_properties: {grid_position: 'QLUVXH,SLDXRL'}
+    name: spacer_3_copy
+    properties: {height: 33.71295166015625}
+    type: Spacer
+  - layout_properties: {grid_position: 'ZAZXON,IQSRYF'}
+    name: label_3
+    properties: {align: center, bold: true, font_size: 18, text: Discover Your career}
+    type: Label
+  - layout_properties: {grid_position: 'UTFAQQ,DLSYJG'}
+    name: label_4
+    properties:
+      align: center
+      text: |
+        Get career paths, alternatives, and subject recommendations tailored to you.
+    type: Label
+  - layout_properties: {grid_position: 'SAAHMD,IDEDNY'}
+    name: label_5
+    properties: {align: center, bold: true, font_size: 18, text: Plan with Confidence}
+    type: Label
+  - layout_properties: {grid_position: 'ISSQYH,JNHYQY'}
+    name: label_6
+    properties:
+      align: center
+      text: |
+        Interactive roadmaps show exactly what steps to take to reach your goals.
+    type: Label
+  - layout_properties: {grid_position: 'KWBKMZ,UCUSLG'}
+    name: label_7
+    properties: {align: center, bold: true, font_size: 18, text: Stay on Track}
+    type: Label
+  - layout_properties: {grid_position: 'BBHFFO,AECXWU'}
+    name: label_8
+    properties:
+      align: center
+      text: |
+        Track tasks, monitor progress, and visualise your achievements.
+    type: Label
+  - layout_properties: {grid_position: 'ZSAIUG,TOLXYK'}
+    name: label_7_copy
+    properties: {align: center, bold: true, font_size: 18, text: See your Progress}
+    type: Label
+  - layout_properties: {grid_position: 'WOETJR,GGRJEI'}
+    name: label_10_copy
+    properties:
+      align: center
+      text: |
+        Visualise progress with interactive graphs, monitor achievements, and stay motivated.
+    type: Label
+  - layout_properties: {grid_position: 'TREQVX,PZZZJS'}
+    name: label_7_copy_copy
+    properties: {align: center, bold: true, font_size: 18, text: Secure Access}
+    type: Label
+  - layout_properties: {grid_position: 'ETYBKT,XABRSU'}
+    name: label_10
+    properties:
+      align: center
+      text: |
+        Create an account quickly to save progress, personalise your experience, and access all features.
+    type: Label
+  - layout_properties: {grid_position: 'GJYUVA,XXZCSD'}
+    name: label_7_copy_copy_copy
+    properties: {align: center, bold: true, font_size: 18, text: Ask and Learn}
+    type: Label
+  - layout_properties: {grid_position: 'GQPXRM,QATZLK'}
+    name: label_12
+    properties:
+      align: center
+      text: |
+        Ask questions and get personalised advice based on your previous interactions.
+    type: Label
+  layout_properties: {slot: default}
+  name: column_panel_1
+  properties: {background: bla, col_spacing: small}
+  type: ColumnPanel
+- layout_properties: {slot: top-left-btn}
+  name: column_panel_2
+  properties: {}
+  type: ColumnPanel
+- components:
+  - components:
+    - layout_properties: {}
+      name: label_9
+      properties: {text: '                                          '}
+      type: Label
+    - event_bindings: {click: btnHome_click}
+      name: btnHome
+      properties: {bold: true, font_size: 16, text: Home, underline: true}
+      type: Button
+    - event_bindings: {click: btnAbout_click}
+      name: btnAbout
+      properties: {bold: true, font_size: 16, text: About, underline: true}
+      type: Button
+    - event_bindings: {click: btnSupport_click}
+      name: btnSupport
+      properties: {bold: true, font_size: 16, text: Support, underline: true}
+      type: Button
+    - event_bindings: {click: btnDashboard_click}
+      name: btnDashboard
+      properties: {bold: true, font_size: 16, text: Dashboard, underline: true}
+      type: Button
+    - event_bindings: {click: btnLogin_click}
+      name: btnLogin
+      properties: {role: outlined-button, text: Login, underline: false}
+      type: Button
+    - event_bindings: {click: btnSignup_click}
+      name: btnSignup
+      properties: {role: outlined-button, text: Signup, underline: false}
+      type: Button
+    layout_properties: {grid_position: 'IJNJWE,EMUWSH'}
+    name: navbar_links
+    properties: {}
+    type: FlowPanel
+  layout_properties: {slot: title}
+  name: column_panel_3
+  properties: {}
+  type: ColumnPanel
+container:
+  properties: {html: '@theme:standard-page.html'}
+  type: HtmlTemplate
+custom_component: false
+is_package: true

@@ -1,0 +1,102 @@
+components:
+- components:
+  - components: []
+    layout_properties: {grid_position: 'TZEQDD,NVXRTB'}
+    name: column_panel_1
+    properties: {col_spacing: small}
+    type: ColumnPanel
+  - layout_properties: {grid_position: 'OVEMVO,QAVQUI'}
+    name: column_panel_2
+    properties: {}
+    type: ColumnPanel
+  - components:
+    - layout_properties: {grid_position: 'VIZPOU,BZRRIZ'}
+      name: lblUsername
+      properties: {text: 'Please enter a username:'}
+      type: Label
+    - layout_properties: {grid_position: 'EBBTJA,CMVUSP'}
+      name: tbUsername
+      properties: {}
+      type: TextBox
+    - layout_properties: {grid_position: 'PZNKKN,JVXVPC'}
+      name: lblPassword
+      properties: {text: 'Please enter a password:'}
+      type: Label
+    - layout_properties: {grid_position: 'QPJDRS,BFKZRX'}
+      name: tbPassword
+      properties: {hide_text: true}
+      type: TextBox
+    - layout_properties: {grid_position: 'BUBSYA,DNXOCA'}
+      name: lblPasswordConfirm
+      properties: {text: 'Please confirm password:'}
+      type: Label
+    - layout_properties: {grid_position: 'LQPKPG,VJAKFX'}
+      name: tbPasswordConfirm
+      properties: {hide_text: true}
+      type: TextBox
+    - event_bindings: {click: btnSignup_click}
+      layout_properties: {grid_position: 'QKIYFK,TVEYQZ'}
+      name: btnSignup
+      properties: {role: filled-button, text: Signup}
+      type: Button
+    - layout_properties: {grid_position: 'EBAOAN,TKWLCZ'}
+      name: lblPrompt
+      properties: {text: 'Already signed up?'}
+      type: Label
+    - event_bindings: {click: btnLogin_click}
+      layout_properties: {grid_position: 'KYTICE,IRZSTM'}
+      name: btnLogin
+      properties: {role: filled-button, text: Login}
+      type: Button
+    layout_properties: {grid_position: 'OVEMVO,LKDDHQ'}
+    name: oCard
+    properties: {background: 'theme:Primary Overlay 1', role: outlined-card}
+    type: ColumnPanel
+  - layout_properties: {grid_position: 'OVEMVO,IHRWTA'}
+    name: label_1
+    properties: {}
+    type: Label
+  layout_properties: {slot: default}
+  name: cp
+  properties: {col_widths: '{}'}
+  type: ColumnPanel
+- components:
+  - name: label_9
+    properties: {text: '                                          '}
+    type: Label
+  - event_bindings: {click: btnHome_click}
+    layout_properties: {}
+    name: btnHome
+    properties: {bold: true, font_size: 16, text: Home, underline: true}
+    type: Button
+  - event_bindings: {click: btnAbout_click}
+    layout_properties: {}
+    name: btnAbout
+    properties: {bold: true, font_size: 16, text: About, underline: true}
+    type: Button
+  - event_bindings: {click: btnSupport_click}
+    layout_properties: {}
+    name: btnSupport
+    properties: {bold: true, font_size: 16, text: Support, underline: true}
+    type: Button
+  - event_bindings: {click: btnDashboard_click}
+    layout_properties: {}
+    name: btnDashboard
+    properties: {bold: true, font_size: 16, text: Dashboard, underline: true}
+    type: Button
+  - event_bindings: {click: button_1_click}
+    name: button_1
+    properties: {role: outlined-button, text: Login}
+    type: Button
+  - event_bindings: {click: button_1_click}
+    name: button_1_copy
+    properties: {role: outlined-button, text: Signup}
+    type: Button
+  layout_properties: {slot: title}
+  name: navbar_links
+  properties: {}
+  type: FlowPanel
+container:
+  properties: {html: '@theme:standard-page.html'}
+  type: HtmlTemplate
+is_package: true

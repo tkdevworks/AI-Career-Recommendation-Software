@@ -1,0 +1,62 @@
+components:
+- components:
+  - components: []
+    layout_properties: {grid_position: 'JUUYSN,WEOBJK'}
+    name: column_panel_1
+    properties: {col_spacing: small}
+    type: ColumnPanel
+  - layout_properties: {grid_position: 'JRQDAJ,VDECKI'}
+    name: label_2
+    properties: {text: '  '}
+    type: Label
+  - layout_properties: {grid_position: 'LFPCCD,HLAGSF'}
+    name: label_1_copy
+    properties: {bold: true, italic: false, text: Support, underline: false, visible: true}
+    type: Label
+  - layout_properties: {grid_position: 'TMBIIY,XGBHUY'}
+    name: label_1
+    properties:
+      text: |
+        We are currently gathering feedback from users prior to the commencement of our beta testing phase. We invite you to share your thoughts with us directly in person!
+    type: Label
+  layout_properties: {slot: default}
+  name: content_panel
+  properties: {}
+  type: ColumnPanel
+- components:
+  - name: label_9
+    properties: {text: '                                          '}
+    type: Label
+  - event_bindings: {click: btnHome_click}
+    name: btnHome
+    properties: {bold: true, font_size: 16, text: Home, underline: true}
+    type: Button
+  - event_bindings: {click: btnAbout_click}
+    name: btnAbout
+    properties: {bold: true, font_size: 16, text: About, underline: true}
+    type: Button
+  - event_bindings: {click: btnSupport_click}
+    name: btnSupport
+    properties: {bold: true, font_size: 16, text: Support, underline: true}
+    type: Button
+  - event_bindings: {click: btnDashboard_click}
+    name: btnDashboard
+    properties: {bold: true, font_size: 16, text: Dashboard, underline: true}
+    type: Button
+  - event_bindings: {click: btnLogin_click}
+    name: btnLogin_copy
+    properties: {role: outlined-button, text: Login, underline: false}
+    type: Button
+  - event_bindings: {click: btnSignup_click}
+    layout_properties: {}
+    name: btnSignup_copy
+    properties: {role: outlined-button, text: Signup, underline: false}
+    type: Button
+  layout_properties: {slot: title}
+  name: navbar_links
+  properties: {}
+  type: FlowPanel
+container:
+  properties: {html: '@theme:standard-page.html'}
+  type: HtmlTemplate
+is_package: true

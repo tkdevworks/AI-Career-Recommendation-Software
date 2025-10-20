@@ -1,0 +1,110 @@
+allow_embedding: false
+correct_dependency_ids: {}
+db_schema:
+  cart:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      name: mealSize
+      type: string
+    - admin_ui: {order: 1, width: 200}
+      name: addOns
+      type: string
+    - admin_ui: {order: 2, width: 200}
+      name: price
+      type: number
+    - admin_ui: {order: 3, width: 200}
+      name: userId
+      type: string
+    - admin_ui: {order: 1.5, width: 200}
+      name: timeTake
+      type: string
+    - admin_ui: {order: 1.75, width: 200}
+      name: datePick
+      type: date
+    - admin_ui: {order: 1.625, width: 200}
+      name: taskName
+      type: string
+    server: full
+    title: Cart
+  data:
+    client: search
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      name: interests
+      type: string
+    - admin_ui: {order: 1, width: 200}
+      name: hobbies
+      type: string
+    - admin_ui: {order: 2, width: 200}
+      name: subjects
+      type: string
+    - admin_ui: {order: 3, width: 200}
+      name: aims
+      type: string
+    - admin_ui: {order: 4, width: 200}
+      name: skills
+      type: string
+    - admin_ui: {order: 5, width: 200}
+      name: userId
+      type: string
+    - admin_ui: {order: 6, width: 200}
+      name: advice
+      type: string
+    server: full
+    title: Data
+  road:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      name: userId
+      type: string
+    - admin_ui: {order: 1, width: 200}
+      name: title
+      type: string
+    - admin_ui: {order: 3, width: 200}
+      name: dotpoints
+      type: simpleObject
+    server: full
+    title: Road
+  task:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      name: userId
+      type: string
+    - admin_ui: {order: 1, width: 200}
+      name: taskTotal
+      type: number
+    server: full
+    title: Task
+  users:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      name: username
+      type: string
+    - admin_ui: {order: 1, width: 200}
+      name: password
+      type: string
+    server: full
+    title: Users
+dependencies: []
+metadata: {description: Find your path. Fuel your potential., logo_img: 'asset:futureready-high-resolution-logo-transparent (4).png', title: Future Ready}
+name: Clone of Future Ready (8)
+package_name: Tanish_Sac
+renamed: true
+runtime_options:
+  client_version: '3'
+  server_spec: {base: python310-minimal}
+  server_version: python3-sandbox
+  version: 2
+services:
+- client_config: {}
+  server_config: {}
+  source: /runtime/services/tables.yml
+- client_config: {}
+  server_config: {}
+  source: /runtime/services/anvil/email.yml
+startup: {module: frmHome, type: form}
+startup_form: null

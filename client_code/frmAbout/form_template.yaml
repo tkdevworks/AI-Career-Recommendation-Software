@@ -1,0 +1,120 @@
+components:
+- components:
+  - components:
+    - layout_properties: {grid_position: 'NEPRLR,SVJXEY'}
+      name: label_1
+      properties: {bold: true, text: What the data shows}
+      type: Label
+    - layout_properties: {grid_position: 'SQFQTR,TUJOLN'}
+      name: label_3
+      properties:
+        text: |
+          Many Victorian secondary students feel overwhelmed when choosing a career or university pathway. Research shows 33.8% of students do not know which careers suit them, and 40.5% feel they have no career direction.
+      type: Label
+    - layout_properties: {grid_position: 'XSMAAR,CHGBCB'}
+      name: label_2
+      properties: {bold: true, text: The problem}
+      type: Label
+    - layout_properties: {grid_position: 'QVTBND,PGMOPO'}
+      name: label_4
+      properties:
+        text: |
+          Traditional career counselling is effective but not accessible daily. Students need instant, personalised guidance to make informed decisions and stay motivated.
+      type: Label
+    - layout_properties: {grid_position: 'JGAXWG,DCAQPC'}
+      name: label_5
+      properties: {bold: true, text: Our Solution}
+      type: Label
+    - layout_properties: {grid_position: 'HCYCCF,UQLGZE'}
+      name: label_6
+      properties:
+        text: |
+          Future Ready provides 24/7 AI-powered career and future guidance. Input your skills, interests, subjects, and goals, and receive personalised career recommendations, alternatives, and actionable roadmaps. Our task manager and productivity dashboard track progress, highlight priorities, and visualise achievements, keeping students accountable and on track.
+      type: Label
+    - layout_properties: {grid_position: 'IETFKC,EGGIOK'}
+      name: label_7
+      properties: {bold: true, text: Impact}
+      type: Label
+    - layout_properties: {grid_position: 'WNALTR,RYVTTY'}
+      name: label_8
+      properties:
+        text: |
+          By combining research-backed insights with AI, Future Ready reduces career uncertainty, increases confidence, and empowers VCE students in Years 9–12 to navigate their future with clarity and purpose
+      type: Label
+    - layout_properties: {grid_position: 'CVLPDW,LVGWBM'}
+      name: label_10
+      properties: {bold: true, text: Core Values}
+      type: Label
+    - layout_properties: {grid_position: 'QQVASX,UTZUYM'}
+      name: label_11
+      properties:
+        text: |-
+          Clarity: Helping students understand their career options clearly.
+          Guidance: Providing personalised, actionable steps for the future.
+          Motivation: Encouraging accountability and progress toward goals.
+          Accessibility: 24/7 AI-powered support for every student.
+      type: Label
+    - layout_properties: {grid_position: 'CARYCK,NJDIUS'}
+      name: label_12
+      properties: {bold: true, text: Mission}
+      type: Label
+    - layout_properties: {grid_position: 'VYFEFE,VSRLEH'}
+      name: label_13
+      properties:
+        text: |
+          To empower VCE students with AI-driven career and future guidance, personalised roadmaps, and tools to stay motivated and confident in their choices.
+      type: Label
+    - layout_properties: {grid_position: 'ZMWFWW,ZTQSAZ'}
+      name: label_14
+      properties: {bold: true, text: Vision}
+      type: Label
+    - layout_properties: {grid_position: 'MOTJNB,UMQSHT'}
+      name: label_15
+      properties:
+        text: |
+          A world where every student can navigate their career path with clarity, purpose, and confidence.
+      type: Label
+    layout_properties: {grid_position: 'GVRCAI,LULKSU'}
+    name: content_panel_copy
+    properties: {}
+    type: ColumnPanel
+  layout_properties: {slot: default}
+  name: content_panel
+  properties: {}
+  type: ColumnPanel
+- components:
+  - name: label_9
+    properties: {text: '                                          '}
+    type: Label
+  - event_bindings: {click: btnHome_click}
+    name: btnHome
+    properties: {bold: true, font_size: 16, text: Home, underline: true}
+    type: Button
+  - event_bindings: {click: btnAbout_click}
+    name: btnAbout
+    properties: {bold: true, font_size: 16, text: About, underline: true}
+    type: Button
+  - event_bindings: {click: btnSupport_click}
+    name: btnSupport
+    properties: {bold: true, font_size: 16, text: Support, underline: true}
+    type: Button
+  - event_bindings: {click: btnDashboard_click}
+    name: btnDashboard
+    properties: {bold: true, font_size: 16, text: Dashboard, underline: true}
+    type: Button
+  - event_bindings: {click: btnLogin_click}
+    name: btnLogin
+    properties: {role: outlined-button, text: Login, underline: false}
+    type: Button
+  - event_bindings: {click: btnSignup_click}
+    name: btnSignup
+    properties: {role: outlined-button, text: Signup, underline: false}
+    type: Button
+  layout_properties: {slot: title}
+  name: navbar_links
+  properties: {}
+  type: FlowPanel
+container:
+  properties: {html: '@theme:standard-page.html'}
+  type: HtmlTemplate
+is_package: true

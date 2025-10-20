@@ -1,0 +1,71 @@
+components:
+- components:
+  - layout_properties: {grid_position: 'CGFXYS,LPCLHO'}
+    name: label_1
+    properties: {text: New Feature! Our intelligent 'Value Score' System analyses all task details and provides a precise score reflecting the true value of each task on a scale of 1.0 to 10.0.}
+    type: Label
+  - layout_properties: {grid_position: 'OZAGUX,FVYOQJ'}
+    name: rpSelections
+    properties: {background: '', item_template: frmCart.templateSelections}
+    type: RepeatingPanel
+  - event_bindings: {click: btnOrderAgain_click}
+    layout_properties: {grid_position: 'IFPCNT,RNYUHT'}
+    name: btnOrderAgain
+    properties: {role: filled-button, text: Add a task}
+    type: Button
+  - event_bindings: {click: btnConfirmOrder_click}
+    layout_properties: {grid_position: 'IFPCNT,PWHWCD'}
+    name: btnConfirmOrder
+    properties: {role: filled-button, text: Back to Dashboard}
+    type: Button
+  layout_properties: {slot: default}
+  name: cp
+  properties: {}
+  type: ColumnPanel
+- layout_properties: {slot: nav-right}
+  name: navbar_links
+  properties: {}
+  type: FlowPanel
+- components:
+  - event_bindings: {click: btnDash_click}
+    layout_properties: {grid_position: 'DYNTUA,VYIITZ'}
+    name: btnDash
+    properties: {text: Visit Dashboard}
+    type: Button
+  - event_bindings: {click: btnTaskAdd_click}
+    layout_properties: {grid_position: 'IMHWBQ,NGRGZJ'}
+    name: btnTaskAdd
+    properties: {text: Go to task Manager}
+    type: Button
+  - event_bindings: {click: button_2_click}
+    layout_properties: {grid_position: 'KXQUKP,CQTNRX'}
+    name: btnAi
+    properties: {text: Ask Career AI}
+    type: Button
+  - event_bindings: {click: btnRoad_click}
+    layout_properties: {grid_position: 'SQGNKC,ECBRZH'}
+    name: btnRoad
+    properties: {text: View the roadmap}
+    type: Button
+  - layout_properties: {grid_position: 'GNBXRV,QRYLZC'}
+    name: button_2_copy_copy
+    properties: {text: '  '}
+    type: Button
+  - event_bindings: {click: button_2_copy_copy_copy_click}
+    layout_properties: {grid_position: 'VAEAHW,QETDIO'}
+    name: btnLogout
+    properties: {text: Log out}
+    type: Button
+  - event_bindings: {click: btnSettings_click}
+    layout_properties: {grid_position: 'JHMGPD,MHZPOH'}
+    name: btnSettings
+    properties: {text: Settings}
+    type: Button
+  layout_properties: {slot: left-nav}
+  name: column_panel_1
+  properties: {}
+  type: ColumnPanel
+container:
+  properties: {html: '@theme:standard-page.html'}
+  type: HtmlTemplate
+is_package: true

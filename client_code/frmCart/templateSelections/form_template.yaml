@@ -1,0 +1,75 @@
+components:
+- components:
+  - layout_properties: {grid_position: 'ACJMIZ,DMVKEM LFYWXY,FZRAAA'}
+    name: label_1
+    properties: {text: 'Task Name:'}
+    type: Label
+  - data_bindings:
+    - {code: 'self.item[''taskName'']', property: text, writeback: false}
+    layout_properties: {grid_position: 'ACJMIZ,DMVKEM LFYWXY,ROBIWK'}
+    name: lblName
+    properties: {}
+    type: Label
+  - layout_properties: {grid_position: 'ACJMIZ,DMVKEM ORQNTH,MEXJQJ'}
+    name: lblPizzas
+    properties: {text: 'Due date:'}
+    type: Label
+  - data_bindings:
+    - {code: 'self.item[''datePick'']', property: text, writeback: false}
+    layout_properties: {grid_position: 'ACJMIZ,DMVKEM ORQNTH,TLOXUA'}
+    name: lblDate
+    properties: {}
+    type: Label
+  - layout_properties: {grid_position: 'ACJMIZ,DMVKEM TGBLJB,MJCRJQ'}
+    name: lblToppings
+    properties: {text: Categories}
+    type: Label
+  - data_bindings:
+    - {code: 'self.item[''addOns'']', property: text, writeback: false}
+    layout_properties: {grid_position: 'ACJMIZ,DMVKEM TGBLJB,RGEMTG'}
+    name: lblTopping
+    properties: {}
+    type: Label
+  - layout_properties: {grid_position: 'ACJMIZ,ZOAAWP ZYTNFR,XAQCEB'}
+    name: label_1_copy
+    properties: {text: 'Estimated time:'}
+    type: Label
+  - data_bindings:
+    - {code: 'self.item[''timeTake'']', property: text, writeback: false}
+    layout_properties: {grid_position: 'ACJMIZ,ZOAAWP ZYTNFR,QNECQK'}
+    name: lblTime
+    properties: {}
+    type: Label
+  - layout_properties: {grid_position: 'ACJMIZ,ZOAAWP NUCQQO,JNMJRH'}
+    name: label_1_copy_copy
+    properties: {text: 'Priority Level:'}
+    type: Label
+  - data_bindings:
+    - {code: 'self.item[''mealSize'']', property: text, writeback: false}
+    layout_properties: {grid_position: 'ACJMIZ,ZOAAWP NUCQQO,NAPOLH'}
+    name: lblPizza
+    properties: {}
+    type: Label
+  - layout_properties: {grid_position: 'ACJMIZ,ZOAAWP SHIOAV,FGIOZT'}
+    name: lblPrices
+    properties: {text: 'Value Score:'}
+    type: Label
+  - data_bindings:
+    - {code: 'self.item[''price'']', property: text, writeback: false}
+    layout_properties: {grid_position: 'ACJMIZ,ZOAAWP SHIOAV,QELFQS'}
+    name: lblPrice
+    properties: {}
+    type: Label
+  - event_bindings: {click: btnDelete_click}
+    layout_properties: {grid_position: 'PRMXEY,WEGHXU'}
+    name: btnDelete
+    properties: {role: filled-button, text: Mark as complete!}
+    type: Button
+  layout_properties: {grid_position: 'OFZNEW,XJYBAL'}
+  name: outlined_card_1
+  properties: {background: 'theme:Primary Overlay 3', role: outlined-card}
+  type: ColumnPanel
+container:
+  properties: {background: 'theme:Primary Overlay 1'}
+  type: ColumnPanel
+is_package: true

@@ -1,0 +1,141 @@
+components:
+- components:
+  - layout_properties: {grid_position: 'UHCANA,LOUYEX'}
+    name: button_2
+    properties: {bold: false, italic: true, text: You can view your current recommendations on the Dashboard}
+    type: Button
+  - layout_properties: {grid_position: 'GLXCCJ,ILRRCP'}
+    name: label_1
+    properties: {bold: true, text: Get your recommendations!!}
+    type: Label
+  - layout_properties: {grid_position: 'HXHRKX,BWKXFA'}
+    name: label_3
+    properties: {text: 'Year Level:'}
+    type: Label
+  - layout_properties: {grid_position: 'HXHRKX,BSZMXO'}
+    name: tbYear
+    properties: {}
+    type: TextBox
+  - layout_properties: {grid_position: 'ZZOSJJ,QGEQVX'}
+    name: label_2
+    properties: {text: 'Interests:'}
+    type: Label
+  - layout_properties: {grid_position: 'ZZOSJJ,MLCESV'}
+    name: tbInterests
+    properties: {}
+    type: TextBox
+  - layout_properties: {grid_position: 'FVNJKI,CNBFPH'}
+    name: label_2_copy
+    properties: {text: 'Hobbies:'}
+    type: Label
+  - layout_properties: {grid_position: 'FVNJKI,IEZYAE'}
+    name: tbHobbies
+    properties: {}
+    type: TextBox
+  - layout_properties: {grid_position: 'SYWJHK,MZBGGL'}
+    name: label_2_copy_copy
+    properties: {text: 'Subjects:'}
+    type: Label
+  - layout_properties: {grid_position: 'SYWJHK,WKBUJT'}
+    name: tbSubjects
+    properties: {}
+    type: TextBox
+  - layout_properties: {grid_position: 'FIAWEC,PPBJNI'}
+    name: label_2_copy_copy_copy
+    properties: {text: 'Aims:'}
+    type: Label
+  - layout_properties: {grid_position: 'FIAWEC,QBDFHE'}
+    name: tbAims
+    properties: {}
+    type: TextBox
+  - layout_properties: {grid_position: 'LRAPZA,FCTYPV'}
+    name: label_2_copy_copy_copy_copy
+    properties: {text: 'Skills:'}
+    type: Label
+  - layout_properties: {grid_position: 'LRAPZA,BTXNHG'}
+    name: tbSkills
+    properties: {}
+    type: TextBox
+  - event_bindings: {click: button_1_click}
+    layout_properties: {grid_position: 'MNSUBD,KNNIRJ'}
+    name: button_1
+    properties: {role: filled-button, text: Send}
+    type: Button
+  - layout_properties: {grid_position: 'CZEGLE,GATCXE'}
+    name: label_2_copy_copy_copy_copy_copy
+    properties: {text: 'Or ask a follow up question:'}
+    type: Label
+  - layout_properties: {grid_position: 'LHIWML,VYLXSN'}
+    name: text_area_1
+    properties: {}
+    type: TextArea
+  - event_bindings: {click: btesend_click}
+    layout_properties: {grid_position: 'JRTTJP,YAUMIU'}
+    name: btesend
+    properties: {role: filled-button, text: Send}
+    type: Button
+  - components:
+    - data_bindings: []
+      layout_properties: {grid_position: 'AWEROQ,RUEQEJ'}
+      name: lblResponse
+      properties: {align: center, bold: true, font: comic sans, italic: false}
+      type: Label
+    layout_properties: {grid_position: 'DHKTRH,MLUBAB'}
+    name: outlined_card_1
+    properties: {background: 'theme:Primary Overlay 1', role: outlined-card}
+    type: ColumnPanel
+  - layout_properties: {grid_position: 'MSAQOR,BYOPNY'}
+    name: label_4
+    properties: {text: '  '}
+    type: Label
+  layout_properties: {slot: default}
+  name: content_panel
+  properties: {}
+  type: ColumnPanel
+- layout_properties: {slot: nav-right}
+  name: navbar_links
+  properties: {}
+  type: FlowPanel
+- components:
+  - event_bindings: {click: btnDash_click}
+    layout_properties: {grid_position: 'DYNTUA,VYIITZ'}
+    name: btnDash
+    properties: {text: Visit Dashboard}
+    type: Button
+  - event_bindings: {click: btnTaskAdd_click}
+    layout_properties: {grid_position: 'IMHWBQ,NGRGZJ'}
+    name: btnTaskAdd
+    properties: {text: Go to task Manager}
+    type: Button
+  - event_bindings: {click: button_2_click}
+    layout_properties: {grid_position: 'KXQUKP,CQTNRX'}
+    name: btnAi
+    properties: {text: Ask Career AI}
+    type: Button
+  - event_bindings: {click: btnRoad_click}
+    layout_properties: {grid_position: 'SQGNKC,ECBRZH'}
+    name: btnRoad
+    properties: {text: View the roadmap}
+    type: Button
+  - layout_properties: {grid_position: 'GNBXRV,QRYLZC'}
+    name: button_2_copy_copy
+    properties: {text: '  '}
+    type: Button
+  - event_bindings: {click: button_2_copy_copy_copy_click}
+    layout_properties: {grid_position: 'VAEAHW,QETDIO'}
+    name: btnLogout
+    properties: {text: Log out}
+    type: Button
+  - event_bindings: {click: btnSettings_click}
+    layout_properties: {grid_position: 'JHMGPD,MHZPOH'}
+    name: btnSettings
+    properties: {text: Settings}
+    type: Button
+  layout_properties: {slot: left-nav}
+  name: column_panel_1
+  properties: {}
+  type: ColumnPanel
+container:
+  properties: {html: '@theme:standard-page.html'}
+  type: HtmlTemplate
+is_package: true

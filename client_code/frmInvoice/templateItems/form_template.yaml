@@ -1,0 +1,33 @@
+components:
+- layout_properties: {grid_position: 'LYFUBL,DNEOBQ'}
+  name: label_1
+  properties: {text: 'Task Name: '}
+  type: Label
+- data_bindings:
+  - {code: 'self.item[''taskName'']', property: text, writeback: false}
+  layout_properties: {grid_position: 'LYFUBL,KXZSZV'}
+  name: lblName
+  properties: {}
+  type: Label
+- layout_properties: {grid_position: 'LYFUBL,QAMFMZ'}
+  name: label_2
+  properties: {text: 'Due Date:'}
+  type: Label
+- data_bindings:
+  - {code: 'self.item[''datePick'']', property: text, writeback: false}
+  layout_properties: {grid_position: 'LYFUBL,LWILZM'}
+  name: lblDate
+  properties: {}
+  type: Label
+- layout_properties: {grid_position: 'LYFUBL,QQLEXT'}
+  name: label_4
+  properties: {text: 'Recommended Time:'}
+  type: Label
+- data_bindings:
+  - {code: 'self.item[''timeTake'']', property: text, writeback: false}
+  layout_properties: {grid_position: 'LYFUBL,QBMMPB'}
+  name: lblTime
+  properties: {}
+  type: Label
+container: {type: ColumnPanel}
+is_package: true

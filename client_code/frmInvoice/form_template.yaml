@@ -1,0 +1,124 @@
+components:
+- components:
+  - components:
+    - layout_properties: {grid_position: 'IILARA,UNTPVF LNRALR,GQHEVN'}
+      name: label_3
+      properties: {text: 'Task Open:'}
+      type: Label
+    - layout_properties: {grid_position: 'IILARA,UNTPVF YWDTPM,HWTGFZ'}
+      name: label_4
+      properties: {text: 'Total Tasks: '}
+      type: Label
+    - layout_properties: {grid_position: 'IILARA,UNTPVF ZCQLAT,QNZJXR'}
+      name: label_1
+      properties: {text: 'Completed Tasks:'}
+      type: Label
+    - layout_properties: {grid_position: 'IILARA,WFJNAK ZHBNLX,RDRDRD'}
+      name: lblTasks
+      properties: {}
+      type: Label
+    - layout_properties: {grid_position: 'IILARA,WFJNAK VDKQNS,YKZJXX'}
+      name: lblOpen
+      properties: {}
+      type: Label
+    - layout_properties: {grid_position: 'IILARA,WFJNAK ZVNTAI,JGWPAI'}
+      name: lblComp
+      properties: {}
+      type: Label
+    layout_properties: {grid_position: 'KLBIAV,GXGOOJ'}
+    name: outlined_card_2
+    properties: {role: outlined-card}
+    type: ColumnPanel
+  - layout_properties: {grid_position: 'XEUJME,KRORDJ'}
+    name: plot_1
+    properties: {}
+    type: Plot
+  - layout_properties: {grid_position: 'XEUJME,BRQAQC'}
+    name: plot_3
+    properties: {}
+    type: Plot
+  - layout_properties: {grid_position: 'XEUJME,BHYAXN'}
+    name: plot_2
+    properties: {}
+    type: Plot
+  - components:
+    - layout_properties: {grid_position: 'QHLKFU,AAIVEN'}
+      name: rpInvoice
+      properties: {item_template: frmInvoice.templateItems}
+      type: RepeatingPanel
+    layout_properties: {grid_position: 'VTXOTY,LSTBQP'}
+    name: outlined_card_1
+    properties: {background: 'theme:Light Overlay 1', role: outlined-card}
+    type: ColumnPanel
+  - layout_properties: {grid_position: 'CAONGQ,CCQEUY'}
+    name: plot_4
+    properties: {}
+    type: Plot
+  - layout_properties: {grid_position: 'CAONGQ,JUBQGY'}
+    name: plot_5
+    properties: {}
+    type: Plot
+  - layout_properties: {grid_position: 'CAONGQ,PNFZLK'}
+    name: plot_6
+    properties: {}
+    type: Plot
+  - layout_properties: {grid_position: 'UHAOFW,OKVDJV'}
+    name: rpAdvice
+    properties: {item_template: frmInvoice.ItemTemplate3}
+    type: RepeatingPanel
+  - layout_properties: {grid_position: 'CVPTUR,VDKSQO'}
+    name: label_2
+    properties: {text: '  '}
+    type: Label
+  layout_properties: {slot: default}
+  name: cp
+  properties: {col_widths: '{}'}
+  type: ColumnPanel
+- components: []
+  layout_properties: {slot: nav-right}
+  name: navbar_links
+  properties: {}
+  type: FlowPanel
+- components:
+  - event_bindings: {click: btnDash_click}
+    layout_properties: {grid_position: 'DYNTUA,VYIITZ'}
+    name: btnDash
+    properties: {text: Visit Dashboard}
+    type: Button
+  - event_bindings: {click: btnTaskAdd_click}
+    layout_properties: {grid_position: 'IMHWBQ,NGRGZJ'}
+    name: btnTaskAdd
+    properties: {text: Go to task Manager}
+    type: Button
+  - event_bindings: {click: button_2_click}
+    layout_properties: {grid_position: 'KXQUKP,CQTNRX'}
+    name: btnAi
+    properties: {text: Ask Career AI}
+    type: Button
+  - event_bindings: {click: btnRoad_click}
+    layout_properties: {grid_position: 'SQGNKC,ECBRZH'}
+    name: btnRoad
+    properties: {text: View the roadmap}
+    type: Button
+  - layout_properties: {grid_position: 'GNBXRV,QRYLZC'}
+    name: button_2_copy_copy
+    properties: {text: '  '}
+    type: Button
+  - event_bindings: {click: button_2_copy_copy_copy_click}
+    layout_properties: {grid_position: 'VAEAHW,QETDIO'}
+    name: btnLogout
+    properties: {text: Log out}
+    type: Button
+  - event_bindings: {click: btnSettings_click}
+    layout_properties: {grid_position: 'JHMGPD,MHZPOH'}
+    name: btnSettings
+    properties: {align: center, text: Settings}
+    type: Button
+  layout_properties: {slot: left-nav}
+  name: column_panel_1
+  properties: {}
+  type: ColumnPanel
+container:
+  properties: {html: '@theme:standard-page.html'}
+  type: HtmlTemplate
+is_package: true

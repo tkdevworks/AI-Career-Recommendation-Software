@@ -1,0 +1,98 @@
+components:
+- components:
+  - components:
+    - layout_properties: {grid_position: 'RQXTJR,PDRHGO'}
+      name: label_2
+      properties: {text: 'Enter your task name: *'}
+      type: Label
+    - layout_properties: {grid_position: 'QBOHPK,FRURMW'}
+      name: tbTaskName
+      properties: {}
+      type: TextBox
+    - layout_properties: {grid_position: 'MGATAZ,MSUCES'}
+      name: label_1
+      properties: {text: 'When is it due?'}
+      type: Label
+    - layout_properties: {grid_position: 'MGATAZ,GYJCZJ'}
+      name: label_3
+      properties: {text: 'How long will it take? *'}
+      type: Label
+    - event_bindings: {change: date_change}
+      layout_properties: {grid_position: 'EOIJMP,ZKMBPA'}
+      name: date
+      properties: {}
+      type: DatePicker
+    - layout_properties: {grid_position: 'EOIJMP,AJUZFZ'}
+      name: ddTime
+      properties:
+        include_placeholder: true
+        items: [< 15 Mins, 30 Mins, 45 Mins, 1 Hour, 1.5 Hours, 2 Hours, 3 Hours, 4 Hours, '> 5 Hours']
+        placeholder: Please select a time
+      type: DropDown
+    - layout_properties: {grid_position: 'TZUCFJ,FKGRHO'}
+      name: lblSize
+      properties: {align: left, text: 'Add tasks priority: *'}
+      type: Label
+    - layout_properties: {grid_position: 'TZUCFJ,XOQNBR'}
+      name: lblTopping
+      properties: {text: 'Add any categories?'}
+      type: Label
+    - event_bindings: {change: ddSize_change}
+      layout_properties: {grid_position: 'RMHATO,BBTMQL'}
+      name: ddSize
+      properties:
+        include_placeholder: true
+        items: [High, Medium, Low]
+        placeholder: Select a category
+      type: DropDown
+    - components:
+      - layout_properties: {grid_position: 'DPUGDR,WFMTIH'}
+        name: cbPrawns
+        properties: {align: center, font_size: 14, text: Revision}
+        type: CheckBox
+      - layout_properties: {grid_position: 'DPUGDR,KVUFMT'}
+        name: cbHam
+        properties: {align: center, font_size: 14, text: Extra Learning}
+        type: CheckBox
+      - layout_properties: {grid_position: 'DPUGDR,FUBATR'}
+        name: cbSalami
+        properties: {align: center, font_size: 14, text: Subject Work}
+        type: CheckBox
+      layout_properties: {grid_position: 'RMHATO,WPGXMG'}
+      name: column_panel_1
+      properties: {}
+      type: ColumnPanel
+    - layout_properties: {grid_position: 'UNOCWE,DSYPSK'}
+      name: lblOrder
+      properties: {}
+      type: Label
+    - event_bindings: {click: cartAdd_click}
+      layout_properties: {grid_position: 'NPJPLE,BYWWYA'}
+      name: cartAdd
+      properties: {role: filled-button, text: Add task}
+      type: Button
+    - layout_properties: {grid_position: 'DWOYQL,IUPCQD'}
+      name: label_4
+      properties: {text: '* Indicates a mandatory field'}
+      type: Label
+    - event_bindings: {click: btnCartGo_click}
+      layout_properties: {grid_position: 'KOKNBK,ZIKCDN'}
+      name: btnCartGo
+      properties: {role: filled-button, text: Finish}
+      type: Button
+    layout_properties: {grid_position: 'VDGUQV,PUJQZS'}
+    name: oCard
+    properties: {background: 'theme:Primary Overlay 1', role: outlined-card}
+    type: ColumnPanel
+  layout_properties: {slot: default}
+  name: cp
+  properties: {}
+  type: ColumnPanel
+- layout_properties: {slot: nav-right}
+  name: navbar_links
+  properties: {}
+  type: FlowPanel
+container:
+  properties: {html: '@theme:standard-page.html'}
+  type: HtmlTemplate
+is_package: true

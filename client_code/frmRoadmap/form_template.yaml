@@ -1,0 +1,71 @@
+components:
+- components:
+  - event_bindings: {click: btnGenerate_click}
+    layout_properties: {grid_position: 'JDDXWN,ZNPNXA'}
+    name: btnGenerate
+    properties: {role: filled-button, text: Generate a roadmap based on my recommendations}
+    type: Button
+  - event_bindings: {click: btnDelete_click}
+    layout_properties: {grid_position: 'JDDXWN,HHWXXZ'}
+    name: btnDelete
+    properties: {role: filled-button, text: Delete my roadmap}
+    type: Button
+  - layout_properties: {grid_position: 'LABBLV,WKXRWG'}
+    name: rpRoad
+    properties: {item_template: frmRoadmap.ItemTemplate2}
+    type: RepeatingPanel
+  - layout_properties: {grid_position: 'BWXLPK,LMZBZE'}
+    name: text_area_1
+    properties: {enabled: true, text: '', visible: true}
+    type: TextArea
+  layout_properties: {slot: default}
+  name: content_panel
+  properties: {}
+  type: ColumnPanel
+- layout_properties: {slot: nav-right}
+  name: navbar_links
+  properties: {}
+  type: FlowPanel
+- components:
+  - event_bindings: {click: btnDash_click}
+    layout_properties: {grid_position: 'DYNTUA,VYIITZ'}
+    name: btnDash
+    properties: {text: Visit Dashboard}
+    type: Button
+  - event_bindings: {click: btnTaskAdd_click}
+    layout_properties: {grid_position: 'IMHWBQ,NGRGZJ'}
+    name: btnTaskAdd
+    properties: {text: Go to task Manager}
+    type: Button
+  - event_bindings: {click: button_2_click}
+    layout_properties: {grid_position: 'KXQUKP,CQTNRX'}
+    name: btnAi
+    properties: {text: Ask Career AI}
+    type: Button
+  - event_bindings: {click: btnRoad_click}
+    layout_properties: {grid_position: 'SQGNKC,ECBRZH'}
+    name: btnRoad
+    properties: {text: View the roadmap}
+    type: Button
+  - layout_properties: {grid_position: 'GNBXRV,QRYLZC'}
+    name: button_2_copy_copy
+    properties: {text: '  '}
+    type: Button
+  - event_bindings: {click: button_2_copy_copy_copy_click}
+    layout_properties: {grid_position: 'VAEAHW,QETDIO'}
+    name: btnLogout
+    properties: {text: Log out}
+    type: Button
+  - event_bindings: {click: btnSettings_click}
+    layout_properties: {grid_position: 'JHMGPD,MHZPOH'}
+    name: btnSettings
+    properties: {text: Settings}
+    type: Button
+  layout_properties: {slot: left-nav}
+  name: column_panel_1
+  properties: {}
+  type: ColumnPanel
+container:
+  properties: {html: '@theme:standard-page.html'}
+  type: HtmlTemplate
+is_package: true
