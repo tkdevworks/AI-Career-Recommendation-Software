@@ -5,7 +5,7 @@ from anvil.tables import app_tables
 import anvil.server
 from google import genai
 
-client = genai.Client(api_key="AIzaSyCTxFmsbjK7xroWDWVsoeJveJ0jbBNWEhM")
+client = genai.Client(api_key="")
 @anvil.server.callable
 def ask_gemini(prompt):
   response = client.models.generate_content(
