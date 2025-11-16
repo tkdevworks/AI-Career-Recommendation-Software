@@ -113,7 +113,7 @@ Follow-up question: {followup}
 
 @anvil.server.callable
 def createRoad(interests, hobbies, subjects, aims, skills, advice):
-  system_prompt = """You are a career roadmap generator. You will get user data and the career recommendation they have been provided.  
+  system_prompt = """You are  a career roadmap generator. You will get user data and the career recommendation they have been provided.  
 Always output exactly 4 steps for them to achieve what is described, relevant to their user data and recommendation. 
 All recommendations must be realistic and actionable within the next few years of the student's life. For example, if the student is Year 10–12, focus on VCE subjects, short-term learning, certifications, and first-year university pathways. Do not assume long-term career progression beyond first year of college/university.
 Make it thorough. Each step must follow this format:
