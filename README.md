@@ -78,8 +78,4 @@ Designed to meet all functional and non-functional requirements, with emphasis o
 Provides structured guidance from career discovery to execution.  
 Equips students with actionable steps, progress tracking, and decision-making clarity.
 
----
-
-## Author
-to be added
 
